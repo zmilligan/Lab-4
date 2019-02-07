@@ -161,6 +161,7 @@ public class Animal
         	return false;
         }
         
+        return true;
         /* return TODO; */
     }
 }
