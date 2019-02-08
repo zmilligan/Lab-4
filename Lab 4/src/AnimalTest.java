@@ -23,7 +23,7 @@ public class AnimalTest
     }
 
     /**
-     * 
+     * Test the full Animal constructors and the getters
      * @throws AssertException
      */
     public void fullConstructorTest() throws AssertException
@@ -39,7 +39,7 @@ public class AnimalTest
     }
     
     /**
-     * 
+     * tests the getColor method individually
      * @throws AssertException
      */
     public void getColorTest() throws AssertException
@@ -52,7 +52,7 @@ public class AnimalTest
     }
     
     /**
-     * 
+     * tests the getName method individually
      * @throws AssertException
      */
     public void getNameTest() throws AssertException
@@ -64,6 +64,10 @@ public class AnimalTest
         Assert.assertEquals("Kermit", animal.getName());
     }
     
+    /**
+     * tests the getWeight method individually
+     * @throws AssertException
+     */
     public void getWeightTest() throws AssertException
     {
         // Use the full constructor
@@ -73,6 +77,10 @@ public class AnimalTest
         Assert.assertEquals(20, animal.getWeight(), 0.01);
     }
     
+    /** 
+     * tests the getHeight method individually
+     * @throws AssertException
+     */
     public void getHeightTest() throws AssertException
     {
         // Use the full constructor
@@ -85,13 +93,17 @@ public class AnimalTest
         Assert.assertEquals(20, animal.getWeight(), 0.01);
     }
     
+    /**
+     * tests the toString method
+     * @throws AssertException
+     */
     public void toStringTest() throws AssertException
     {
         // Use the full constructor
         Animal animal = new Animal("green", "Kermit", 4.0, 20.0);
 
-        // The name should be "Kermit", color "green", height 20 and weight 4.
-        Assert.assertEquals("green", animal.getColor());
+        // The toString should result in "Kermit, a green-colored animal. 20 pounds, 4 inches.\n"
+        Assert.assertEquals("Kermit, a green-colored animal. 20 pounds, 4 inches.\n", animal.toString());
     }
 }
 
