@@ -4,8 +4,8 @@
  * the number of copies of the item. I.e. there would be one equipment object for "batarangs", for
  * which the count variable would be equal to 5.
  *
- * @author Stephen
- * @version 2019-01-27
+ * @author Stephen, Zandi Milligan
+ * @version 2019-02-08
  */
 public class Equipment
 {
@@ -125,5 +125,31 @@ public class Equipment
         // Check that all fields match (name, count, totalWeight, totalPrice, and description):
       
         // TODO: finish method
+        if(!((this.name).equals(otherEq.getName())))
+        {
+        	return false;
+        }
+        
+        if(!((this.description).equals(otherEq.getDescription())))
+        {
+        	return false;
+        }
+        
+        if(this.totalWeight != otherEq.getTotalWeight())
+        {
+        	return false;
+        }
+        
+        if(this.totalPrice != otherEq.getTotalPrice())
+        {
+        	return false;
+        }
+        
+        if(this.count != otherEq.getCount())
+        {
+        	return false;
+        }
+        
+        return true;
     }
 }
