@@ -34,8 +34,8 @@ public class AnimalTest
         // The name should be "Kermit", color "green", height 20 and weight 4.
         Assert.assertEquals("green", animal.getColor());
         Assert.assertEquals("Kermit", animal.getName());
-        Assert.assertEquals(4, animal.getHeight(), 0.01);
-        Assert.assertEquals(20, animal.getWeight(), 0.01);
+        Assert.assertEquals(20, animal.getHeight(), 0.01);
+        Assert.assertEquals(4, animal.getWeight(), 0.01);
     }
     
     /**
@@ -74,7 +74,7 @@ public class AnimalTest
         Animal animal = new Animal("green", "Kermit", 4.0, 20.0);
 
         // The weight should be 4
-        Assert.assertEquals(20, animal.getWeight(), 0.01);
+        Assert.assertEquals(4, animal.getWeight(), 0.01);
     }
     
     /** 
@@ -87,10 +87,7 @@ public class AnimalTest
         Animal animal = new Animal("green", "Kermit", 4.0, 20.0);
 
         // The height should be 20
-        Assert.assertEquals("green", animal.getColor());
-        Assert.assertEquals("Kermit", animal.getName());
-        Assert.assertEquals(4, animal.getHeight(), 0.01);
-        Assert.assertEquals(20, animal.getWeight(), 0.01);
+        Assert.assertEquals(20, animal.getHeight(), 0.01);
     }
     
     /**
@@ -102,8 +99,8 @@ public class AnimalTest
         // Use the full constructor
         Animal animal = new Animal("green", "Kermit", 4.0, 20.0);
 
-        // The toString should result in "Kermit, a green-colored animal. 20 pounds, 4 inches.\n"
-        Assert.assertEquals("Kermit, a green-colored animal. 20 pounds, 4 inches.\n", animal.toString());
+        // The toString should result in "Kermit, a green-colored animal. 4.0 pounds, 20.0 inches.\n"
+        Assert.assertEquals("Kermit, a green-colored animal. 4.0 pounds, 20.0 inches\n", animal.toString());
     }
 }
 
