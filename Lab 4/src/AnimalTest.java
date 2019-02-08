@@ -1,8 +1,8 @@
 /**
- * Testing class for Product object
+ * Testing class for Animal object
  *
- * @author Stephen Thung, references previous code from Dr.Fagg, Taner Davis
- * @version 2018-08-25
+ * @author Zandi Milligan, references previous code from Dr.Fagg, Taner Davis, Steven 
+ * @version 2019-02-08
  */
 public class AnimalTest
 {
