@@ -23,5 +23,16 @@ public class AnimalTest
     }
 
     // TODO: test full constructor, getters, and toString
+    public void fullConstructorTest() throws AssertException
+    {
+        // Use the full constructor
+        Animal animal = new Animal("green", "Kermit", 4.0, 20.0);
+
+        // The name should be "Kermit", color "green", height 20 and weight 4.
+        Assert.assertEquals("green", animal.getColor());
+        Assert.assertEquals("Kermit", animal.getName());
+        Assert.assertEquals(4, animal.getHeight(), 0.01);
+        Assert.assertEquals(20, animal.getWeight(), 0.01);
+    }
 }
 
