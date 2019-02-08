@@ -99,8 +99,8 @@ public class EquipmentTest
     	// construct new object
     	Equipment eq = new Equipment(INFO);
 
-        // The toString should result in "Kermit, a green-colored animal. 20 pounds, 4 inches.\n"
-        Assert.assertEquals("Kermit, a green-colored animal. 20 pounds, 4 inches.\n", eq.toString());
+        // The toString should result in "Name: Thor's Hammer, Number: 1, Weight: 10.00 lbs, Price: $99999999.00 - Cannot be wielded by those unworthy"
+        Assert.assertEquals("Name: Thor's Hammer, Number: 1, Weight: 10.00 lbs, Price: $99999999.00 - Cannot be wielded by those unworthy", eq.toString());
     }
 }
 
