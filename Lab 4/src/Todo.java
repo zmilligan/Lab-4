@@ -9,10 +9,10 @@ Tasks:
 2. AnimalTest constructor test
 3. ATest getters tests
 4. ATest toString test
-5.
-6. 
-7. 
-8. 
+5. Equipment equals method
+6. ETest constructor test
+7. ETest getter tests
+8. ETest toString test
 9. 
 10. 
 11. 
@@ -22,10 +22,10 @@ Estimated Time (minutes):
 2. 5
 3. 10
 4. 4
-5. 
-6. 
-7. 
-8. 
+5. 5
+6. 5
+7. 8
+8. 6
 9. 
 10. 
 11. 
@@ -35,10 +35,10 @@ Actual Time (minutes):
 2. 4
 3. 8
 4. 3
-5. 
-6. 
-7. 
-8. 
+5. 5
+6. 6
+7. 10
+8. 5
 9. 
 10. 
 11. 
