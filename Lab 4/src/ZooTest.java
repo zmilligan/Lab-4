@@ -15,8 +15,8 @@ public class ZooTest
     {
     	//construct new Zoo, add two animal objects
     	Zoo zoo = new Zoo(1);
-    	zoo.addAnimal(new Animal("green", "Kermit", 4, 20));
-    	zoo.addAnimal(new Animal("pink", "Ms. Piggy", 30, 25));
+    	zoo.addAnimal(new Animal("green", "Kermit", 4.0, 20.0));
+    	zoo.addAnimal(new Animal("pink", "Ms. Piggy", 30.0, 25.0));
         
 
         // The total height should be 45
@@ -31,11 +31,11 @@ public class ZooTest
     {
         // construct new Zoo, add two Animal objects
     	Zoo zoo = new Zoo(1);
-    	zoo.addAnimal(new Animal("green", "Kermit", 4, 20));
-    	zoo.addAnimal(new Animal("pink", "Ms. Piggy", 30, 25));
+    	zoo.addAnimal(new Animal("green", "Kermit", 4.0, 20.0));
+    	zoo.addAnimal(new Animal("pink", "Ms. Piggy", 30.0, 25.0));
 
         // The capacity should be 2
-    	Assert.assertEquals(2, zoo.getTotalHeight(), 0.01);
+    	Assert.assertEquals(2, zoo.getCapacity(), 0.01);
     }
     
     /**
@@ -46,11 +46,12 @@ public class ZooTest
     {
     	// construct new Zoo, add two Animal objects
     	Zoo zoo = new Zoo(1);
-    	zoo.addAnimal(new Animal("green", "Kermit", 4, 20));
-    	zoo.addAnimal(new Animal("pink", "Ms. Piggy", 30, 25));
+    	zoo.addAnimal(new Animal("green", "Kermit", 4.0, 20.0));
+    	zoo.addAnimal(new Animal("pink", "Ms. Piggy", 30.0, 25.0));
 
-        // The toString should result in "Name: Thor's Hammer, Number: 1, Weight: 10.00 lbs, Price: $99999999.00 - Cannot be wielded by those unworthy"
-        Assert.assertEquals("Name: Thor's Hammer, Number: 1, Weight: 10.00 lbs, Price: $99999999.00 - Cannot be wielded by those unworthy", eq.toString());
+        // The toString should result in "These animals live in the zoo: \nKermit, a green-colored animal. 4.0 pounds, 20.0 inches.\n
+    	// Ms. Piggy, a pink-colored animal. 30.0 pounds, 25.0 inches.\n"
+        Assert.assertEquals("These animals live in the zoo: \nKermit, a green-colored animal. 4.0 pounds, 20.0 inches\nMs. Piggy, a pink-colored animal. 30.0 pounds, 25.0 inches\n", zoo.toString());
     }
 }
 
