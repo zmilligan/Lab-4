@@ -34,8 +34,8 @@ public class ZooTest
     	zoo.addAnimal(new Animal("green", "Kermit", 4, 20));
     	zoo.addAnimal(new Animal("pink", "Ms. Piggy", 30, 25));
 
-        // The name should be "Thor's Hammer"
-        Assert.assertEquals("Thor's Hammer", eq.getName());
+        // The capacity should be 2
+    	Assert.assertEquals(2, zoo.getTotalHeight(), 0.01);
     }
     
     /**
