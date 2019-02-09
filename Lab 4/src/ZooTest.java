@@ -2,14 +2,14 @@
  * Testing class for Zoo object
  *
  * @author Zandi Milligan, references previous code from Dr.Fagg, Taner Davis, Stephen
- * @version 2019-02-08
+ * @version 2019-02-09
  */
 public class ZooTest
 {
 	
 	
     /**
-     * Test the Equipment constructor and the getters
+     * tests the getTotalHeight method
      */
     public void getTotalHeightTest() throws AssertException
     {
@@ -24,7 +24,7 @@ public class ZooTest
     }
     
     /**
-     * tests the getName method individually
+     * tests the getCapacity method
      * @throws AssertException
      */
     public void getCapacityTest() throws AssertException
